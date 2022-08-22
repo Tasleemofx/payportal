@@ -1,0 +1,35 @@
+.confirm{
+    text-align: center;
+    width: 50vw;
+    
+    table{
+        border: black 1px solid;
+        border-radius: 5px 5px 0 0;
+        margin: 10px auto;
+        thead{
+            background: blue;
+            color: white;
+            border-radius: 50px;
+            td{
+            padding: 1em;
+            }
+        }
+    }
+   .navigate{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                margin: 3em;
+                padding: 0.8em 4em;
+                color: white;
+                background: orange;
+                border-radius: 10px;
+                border: white;
+            }
+            .cancel{
+                color: blue;
+                
+            }
+}
+}

@@ -1,0 +1,23 @@
+.navbar{
+    
+    .Lgheading{
+        color: blue;
+    }
+        ul {
+            list-style-type: none;
+            
+            .nav-item{
+            display: inline-block;
+            padding: 1em;
+            border-bottom: 1px solid black;
+            &:active{
+                border-bottom: red 2px solid;
+        }
+        
+    }
+    .focus{     
+                padding: 0.7em;
+                border-bottom: 10px solid orange;
+            }
+}
+}

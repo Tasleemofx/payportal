@@ -1,12 +1,19 @@
 import React from "react";
 import Nav from "../components/Nav"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
+import "../Styles/confirm.scss"
 
 const Confirm=()=>{
+  
+    let Navigate = useNavigate()
+    const handleSubmit=()=>{
+        Navigate('/Pcomplete')
+    }
     return (
+
         <main className="confirm card">
-            <Nav/>
-            <div class="price card">
+            <Nav focus="CP"/>
+            <div className="price-card">
                 <table>
                     <thead>
                         <tr>
@@ -31,9 +38,13 @@ const Confirm=()=>{
                         </tr>
                     </tbody>
                 </table>
-                <Link to="/Pcomplete">
-                    <button>Pay</button>
-                </Link>
+                     <div className="navigate">          
+                        <button className="btn"
+                        onClick={handleSubmit}>Pay</button>
+                        <p className="cancel"
+                        onClick={()=> Navigate("/")}
+                        >Cancel</p>
+                    </div>
             </div>
         </main>
     )

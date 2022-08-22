@@ -2,7 +2,7 @@ import { BrowserRouter as Router,
 Routes,
  Route
 } from "react-router-dom"
-import './App.css';
+
 import Profile from "./Routes/Profile";
 import Billing from "./Routes/Billing"
 import Confirm from "./Routes/Confirm";

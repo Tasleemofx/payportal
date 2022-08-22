@@ -1,0 +1,59 @@
+
+
+.card{
+    text-align: center;
+    margin: 2em auto;
+    border: black 1px solid;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, antiquewhite 50%, white 40%);
+    width: 50vw;
+    padding: 1em;
+    form{
+        display: flex;
+        flex-direction: column;
+        .input-div{
+            margin: 1em;
+            display: grid;
+            margin: 10px auto;
+            input, select{
+                height: 1.5em;
+                border: black 1px solid ;
+                border-radius: 7px;
+                width: 20vw;
+                outline: none;
+              }           
+        }
+        .ls{
+                width: 2vw;
+                input{
+                    height: 1.5em;
+                    border: black 1px solid ;
+                    border-radius: 7px;
+                    width: 5vw;
+                    outline: none;
+                }
+            }
+        .flex-div{
+                margin: 10px auto;
+                display: flex;
+                width: 30vw;
+            }
+        .navigate{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                margin: 3em;
+                padding: 0.8em 4em;
+                color: white;
+                background: orange;
+                border-radius: 10px;
+                border: white;
+            }
+            .cancel{
+                color: blue;
+                
+            }
+        }
+    }
+}
